@@ -1,0 +1,17 @@
+<div class=" container-fluid g-0">
+    <app-header></app-header>
+      
+    <main>
+      
+       <app-side-nav></app-side-nav>
+        <div  class="display-area"> 
+            
+         <app-manage-category  *ngIf="isCategory"></app-manage-category>
+         <app-manage-user-comp  *ngIf="isUser"></app-manage-user-comp>
+           <app-manage-product-comp *ngIf="isProduct"></app-manage-product-comp>  
+        </div>
+      
+   
+    </main>
+   </div>
+    
